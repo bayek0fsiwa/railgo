@@ -1,0 +1,8 @@
+fastapi
+slowapi
+uvicorn[standard]
+black
+requests
+ipinfo
+redis
+pip
