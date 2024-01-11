@@ -1,7 +1,7 @@
 fastapi
 slowapi
 uvicorn[standard]
-black
+ruff
 requests
 ipinfo
 redis
