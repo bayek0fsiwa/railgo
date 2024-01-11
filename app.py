@@ -28,7 +28,7 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 @app.get("/")
 @limiter.limit("2/minute")
 async def root(request: Request):
-    client_host = json.loads(request.client.host)
+    # client_host = json.loads(request.client.host)
     # ip = r.set("ip", json.dumps(client_host))
     return {"details": "Hello There! 😘"}
 
