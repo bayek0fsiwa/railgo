@@ -2,6 +2,12 @@ name: actions
 on:
   push:
     branches: [main]
+# env:
+#   URL: ${{ secrets.URL }}
+#   STATIONS_URL: ${{ secrets.STATIONS_URL }}
+#   TRAINS_URL: ${{ secrets.TRAINS_URL }}
+#   redis_url: ${{ secrets.redis_url }}
+#   redis_port: ${{ secrets.redis_port }}
 jobs:
   lint:
     runs-on: ${{matrix.os}}
