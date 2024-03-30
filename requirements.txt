@@ -7,5 +7,5 @@ requests
 aiohttp[speedups]
 ipinfo
 redis
-aioredis
+walrus
 black
