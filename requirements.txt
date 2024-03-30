@@ -3,6 +3,7 @@ slowapi
 uvicorn[standard]
 ruff
 requests
+aiohttp[speedups]
 ipinfo
 redis
 aioredis
