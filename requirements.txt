@@ -5,4 +5,5 @@ ruff
 requests
 ipinfo
 redis
-pip
+aioredis
+black
