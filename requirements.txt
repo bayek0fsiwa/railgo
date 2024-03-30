@@ -1,6 +1,5 @@
 fastapi
-ORJSONResponse
-slowapi
+# slowapi
 uvicorn[standard]
 ruff
 requests
