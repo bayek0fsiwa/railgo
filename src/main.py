@@ -4,7 +4,7 @@ from .rail import rail_router
 
 app = FastAPI()
 
-app.include_router(router=rail_router)
+app.include_router(router=rail_router.router)
 
 
 @app.get("/", response_class=JSONResponse)
