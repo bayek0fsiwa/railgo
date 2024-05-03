@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: railgo
-    runtime: python
-    plan: free
-    autoDeploy: false
-    buildCommand: pip install --upgrade -r requirements.txt --no-cache
-    startCommand: uvicorn app:app --reload --port=8080 --proxy-headers --forwarded-allow-ips='*'
