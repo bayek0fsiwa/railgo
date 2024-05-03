@@ -10,7 +10,10 @@ pnr_url = os.getenv("pnr")
 stations_url = os.getenv("stations")
 trains_url = os.getenv("trains")
 
-headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0"}
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0"
+}
+
 
 def get_pnr_status(pnr: int) -> Any:
     try:

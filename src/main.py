@@ -6,7 +6,7 @@ app = FastAPI()
 
 app.include_router(router=rail_router)
 
+
 @app.get("/", response_class=JSONResponse)
 def root(request: Request):
     return {"message": "Hello There! 😘"}
-

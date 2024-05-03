@@ -13,7 +13,7 @@ def get_pnr(pnr: int):
     data = get_pnr(pnr)
     if not data:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Not found")
-    return {"message": "OK" ,"data": data}
+    return {"message": "OK", "data": data}
 
 
 @router.get("/api/v1/trains", response_class=JSONResponse)
