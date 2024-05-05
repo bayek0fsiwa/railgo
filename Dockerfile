@@ -17,15 +17,4 @@ EXPOSE 8080
 
 COPY ./ /app/
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
-
-# docker compose exec <service-name> bash/python
-# Build instruction
-# docker build -t railgo .
-# docker run -dp 127.0.0.1:8080:8080 railgo
-# check running container
-# docker ps
-# To stop running container 
-# docker stop <the-container-id>
-# To remove the container
-# docker rm <the-container-id>
+CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8080"]
