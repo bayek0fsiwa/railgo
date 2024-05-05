@@ -30,7 +30,7 @@ jobs:
           python -m pip install --upgrade --no-cache pip setuptools wheel
           pip install --upgrade --no-cache -r requirements.txt
       - name: Lint with ruff
-        run: ruff --output-format=github .
+        run: ruff check --output-format=github .
         continue-on-error: false
       - name: Print status
         run: echo "Linting complete."
